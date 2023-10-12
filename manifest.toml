@@ -72,7 +72,7 @@ ram.runtime = "50M"
     server_api.label = "API for client apps."
     server_api.show_tile = false
     server_api.allowed = "visitors"
-    server_api.auth_header = false
+    server_api.auth_header = true
     server_api.protected = true
 
     server_federation.url = "__DOMAIN__/federation"
