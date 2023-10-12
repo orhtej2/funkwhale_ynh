@@ -67,7 +67,28 @@ ram.runtime = "50M"
     
     [resources.permissions]
     main.url = "/"
+    
+    server_api.url = "__DOMAIN__/api"
+    server_api.label = "API for client apps."
+    server_api.show_tile = false
+    server_api.allowed = "visitors"
+    server_api.auth_header = false
+    server_api.protected = true
 
+    server_federation.url = "__DOMAIN__/federation"
+    server_federation.label = "Federation API."
+    server_federation.show_tile = false
+    server_federation.allowed = "visitors"
+    server_federation.auth_header = false
+    server_federation.protected = true
+
+    server_client_infos.url = "__DOMAIN__/.well-known"
+    server_client_infos.label = "Server info for clients. (well-known)"
+    server_client_infos.show_tile = false
+    server_client_infos.allowed = "visitors"
+    server_client_infos.auth_header = false
+    server_client_infos.protected = true
+    
     [resources.apt]
     packages = "build-essential, curl, ffmpeg, libjpeg-dev, libmagic-dev, libpq-dev, postgresql, postgresql-client, postgresql-contrib, python3-dev, libldap2-dev, libsasl2-dev, make, unzip, zlib1g-dev, libffi-dev, libssl-dev, libxml2-dev, libxslt1-dev, libjpeg-dev, python3-venv, git"
 
